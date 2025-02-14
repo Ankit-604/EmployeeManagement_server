@@ -8,7 +8,11 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: ["http://localhost:2112", process.env.API_BASE_URL],
+    origin: [
+      "http://localhost:2112",
+      process.env.API_BASE_URL,
+      "https://employee-management-client-pearl.vercel.app",
+    ],
     credentials: true,
   })
 );
